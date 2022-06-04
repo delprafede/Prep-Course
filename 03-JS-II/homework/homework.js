@@ -9,7 +9,7 @@ function obtenerMayor(x, y) {
   // Tu codigo: 
   if (x > y ) { 
     return x;
-  } return y;
+  } return y; 
 }
 
 function mayoriaDeEdad(edad) {
@@ -28,13 +28,14 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1) {
-    return 'Online';} else if ( status === 2) {
+    return 'Online';
+  } else if ( status === 2) {
       return 'Away';
     } else {
       return 'Offline'; 
   }
 }
-
+              //variable
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
@@ -44,11 +45,13 @@ function saludo(idioma) {
   // Tu código:
   if ( idioma === 'aleman' ) {
     return 'Guten Tag!';
-  } else if ( idioma === 'mandarin') {
+  }
+   else if ( idioma === 'mandarin') {
      return 'Ni Hao!';
     }
   else if (idioma === 'ingles'){
-     return 'Hello!';}
+     return 'Hello!';
+    }
   else { 
     return 'Hola!';
   }
@@ -82,7 +85,8 @@ function esDiezOCinco(numero) {
   // Tu código:
   if (numero === 10 || numero === 5) { 
     return true;
-  } else { return false;
+  } else { 
+    return false;
   }
 }
 
@@ -92,7 +96,8 @@ function estaEnRango(numero) {
   // Tu código:
   if (numero < 50 && numero > 20) {
     return true;
-  } else { 
+  } 
+  else { 
       return false;
   }
 }
@@ -105,8 +110,10 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero % 1 === 0) 
+  // if (Math.floor(numero)=== numero)
+  if (numero % 1 === 0) {
     return true; 
+  }
   return false;
 }
 
@@ -158,8 +165,8 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
  if (numero < 2 ) return false;
   for ( let i = 2 ; i < numero ; i++)
-  if ( numero % i ===0){
-    return false;
+    if ( numero % i === 0){
+     return false;
   } return true;
 }
 
@@ -179,15 +186,19 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   let tabladel6 = []
-  for (i = 0 ; i < 11 ; i++){
-    tabladel6.push ( i * 6)
-  }  return tabladel6
+    for (i = 0 ; i < 11 ; i++) {
+       tabladel6.push ( i * 6)
+  }  
+    return tabladel6
   }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  return ( numero > 99 && numero < 1000);
+  if ( numero > 99 && numero < 1000) {
+    return true;
+  } 
+    return false;
 }
 
 function doWhile(numero) {
@@ -200,7 +211,8 @@ function doWhile(numero) {
     i = i + 1;
     resultado = resultado + 5;
   } while (i < 8);
-  return resultado
+
+    return resultado
 }
 
 
