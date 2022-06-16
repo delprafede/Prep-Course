@@ -11,6 +11,7 @@ img {
 }
 
 #thirdDiv {
+    
     width: 500px;
     height: 600px;
     padding: 50px;
@@ -23,4 +24,5 @@ img {
 #spanId {
     font-size: 18px;
     margin: 50px;
+    
 }
