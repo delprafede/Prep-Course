@@ -1,0 +1,26 @@
+body {
+    background-color: gray;
+    font-family:sans-serif;
+}
+h1 {
+ color:aqua;
+ display: flex;
+ justify-content: center;
+}
+h2 {
+    color:black;
+    text-decoration: underline;
+    font-size: 30px;
+}
+img {
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+   
+}
+.nomb_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;   
+}

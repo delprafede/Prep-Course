@@ -1,10 +1,35 @@
 html {
     background-color: white;
 }
+body {
+    background-image: url("img.jpg/capuchino_16242_600.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}   
+
+
+.centrar {
+     margin: 0 auto;
+     margin-left: 0 auto;
+     margin-right: 0 auto;
+ }
+ .centrar0 {
+    margin: 0 auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+ a {
+     color: chartreuse;
+ }
 
 h1 {
+
  color: red;
 } 
+h3 , h4 {
+    color:white;
+}
 
 img {
     width: 400px;
@@ -25,4 +50,9 @@ img {
     font-size: 18px;
     margin: 50px;
     
+}
+.centrado-flex {
+    display: flex;
+    justify-content: center;
+
 }
