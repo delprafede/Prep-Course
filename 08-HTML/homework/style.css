@@ -1,0 +1,26 @@
+html {
+    background-color: white;
+}
+
+h1 {
+ color: red;
+} 
+
+img {
+    width: 400px;
+}
+
+#thirdDiv {
+    width: 500px;
+    height: 600px;
+    padding: 50px;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: cornflowerblue;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
