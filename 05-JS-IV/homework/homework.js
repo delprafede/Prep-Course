@@ -6,7 +6,7 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-  let Gato = {
+  var Gato = {
     nombre: nombre,
     edad: edad,
     meow: function() {
@@ -15,6 +15,7 @@ function crearGato(nombre, edad) {
   };
     return Gato;
 }
+// las claves de los objetos son las propiedades... 
 
 
 function agregarPropiedad(objeto, property) {
@@ -31,8 +32,6 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código: 
-
-
     objeto[metodo]();
 }
 
@@ -41,7 +40,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
 
-    return objetoMisterioso.numeroMisterioso * 5;
+    return objetoMisterioso["numeroMisterioso"] * 5;
 
 }
 
@@ -89,6 +88,11 @@ function tienePropiedad(objeto, propiedad) {
   }else {
     return false
   }
+  // return objeto.hasOwnProperty significa buscar la propiedad dentro del objeto, como inclued en un array.
+  // for ( clave in objeto){ if(clave ==== propiedad)
+    // return true;
+  // }
+  // return false;
 }
 
 function verificarPassword(usuario, password) {
@@ -96,12 +100,13 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (usuario.password === password){
-    return true
-  }
-  else {
-    return false;
-  }
+   if (usuario.password === password){
+     return true
+   }
+   else {
+     return false;
+   }
+
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
